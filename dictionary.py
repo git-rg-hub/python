@@ -1,19 +1,30 @@
 #create a dictionary
-student={"roll_n0":14, "name":"riya","mark":85}
-print(student)
-
-#update dictionary
-student["mark"]=90
-student["grade"]="A"
-print(student)
+student = {"roll_no": 7,"name": "ankita","marks": 100}
+print("Dictionary:", student)
+print("Name:", student["name"])
+print("Marks:", student.get("marks"))
 print()
 
-#removing element
-removed_value=student.pop("grade")
-print(removed_value)
-print(student)
+print("Update Dictionary")
+student["marks"] = 90
+student["grade"] = "A"
+print("Updated Dictionary:", student)
+print()
 
-#merging dictionary
-dic2={"a":1,"b":2, "b":5}
-merged_dictionary=student|dic2
-print(merged_dictionary)
+print("Removing Elements")
+removed_value = student.pop("grade")
+print("Removed Value:", removed_value)
+print("After Removing 'grade':", student) 
+
+student.popitem()
+print("After popitem():", student)
+print()
+
+print("Merging Dictionaries")
+dict1 = {"name": "shravan", "rollno": 5}
+dict2 = {"grade": "A", "marks": 90}
+
+merged_dict = dict1 | dict2
+print("First Dictionary:", dict1)
+print("Second Dictionary:", dict2)
+print("Merged Dictionary:", merged_dict)
