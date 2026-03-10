@@ -1,5 +1,5 @@
 #create a dictionary
-student = {"roll_no": 7,"name": "ankita","marks": 100}
+student = {"roll_no": 4,"name": "riya","marks": 100}
 print("Dictionary:", student)
 print("Name:", student["name"])
 print("Marks:", student.get("marks"))
@@ -21,7 +21,7 @@ print("After popitem():", student)
 print()
 
 print("Merging Dictionaries")
-dict1 = {"name": "shravan", "rollno": 5}
+dict1 = {"name": "riya", "rollno": 4}
 dict2 = {"grade": "A", "marks": 90}
 
 merged_dict = dict1 | dict2
