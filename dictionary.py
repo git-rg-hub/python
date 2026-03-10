@@ -1,5 +1,5 @@
 #create a dictionary
-student={"roll_n0":14, "name":"janhavi","mark":85}
+student={"roll_n0":14, "name":"riya","mark":85}
 print(student)
 
 #update dictionary
